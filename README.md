@@ -27,19 +27,19 @@ It ensures that the data is prepared and structured appropriately for the subseq
 
 - Data is extracted from three different source tables (market_1, market_2, market_3) containing information on date created, contacts, new types, and markets.
 
-- These source tables are consolidated into a temporary table named market.
+- These source tables are consolidated into a temporary table named 'market'.
 
 <br>
 
 **Transform**:
 
-- A staging table named staging_market is created with defined columns for date, contacts for each of the 7 days, problem type, and city service area.
+- A staging table named 'staging_market' is created with defined columns for date, contacts for each of the 7 days, problem type, and city service area.
 
 - String data types are converted to INT64 for numerical calculations.
 
-- Null values are handled by replacing them with 0.
+- Null values are handled by replacing them with 0 for numerical calculations
 
-- The problem_type column is categorized based on specific conditions (e.g., type_1 to 'account management', type_2 to 'technician troubleshooting', etc.).
+- The problem_type column is categorized based on specific conditions (ie., type_1 to 'account management', type_2 to 'technician troubleshooting', type_3 to 'scheduling', type_4 to 'construction' and type_5 to 'internet & wifi' ).
 
 <br>
 
@@ -53,11 +53,11 @@ It ensures that the data is prepared and structured appropriately for the subseq
 
 **Load**:
 
-- The final_data table is created with columns for date, contacts for each of the 7 days, total repeat calls, problem type, and city service area.
+- The 'target table' is created with columns for date, contacts for each of the 7 days, total repeat calls, problem type, and city service area.
 
-- Data from the staging_market table is aggregated to calculate the total repeat calls for each entry.
+- Data from the 'staging_market' table is aggregated to calculate the total repeat calls for each entry.
 
-- The transformed and aggregated data is then inserted into the final_data table.
+- The transformed and aggregated data is then inserted into the target table, 'final_data'.
 
 
 <br>
