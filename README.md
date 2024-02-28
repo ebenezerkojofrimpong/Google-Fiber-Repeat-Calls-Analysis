@@ -17,6 +17,47 @@ The objective of this project is to delve into the frequency of customers phonin
 
 <br>
 
+**Methodology**: 
+
+**Extract**:
+
+- Data is extracted from three different source tables (market_1, market_2, market_3) containing information on date created, contacts, new types, and markets.
+
+- These source tables are consolidated into a temporary table named market.
+
+<br>
+
+**Transform**:
+
+- A staging table named staging_market is created with defined columns for date, contacts for each of the 7 days, problem type, and city service area.
+
+- String data types are converted to INT64 for numerical calculations.
+
+- Null values are handled by replacing them with 0.
+
+- The problem_type column is categorized based on specific conditions (e.g., type_1 to 'account management', type_2 to 'technician troubleshooting', etc.).
+
+<br>
+
+**Additional Transformation and Loading**:
+
+- Data from the market table is transformed and inserted into the staging_market table.
+
+- The transformed data includes the date created, contacts for each of the 7 days, categorized problem types, and city service areas.
+
+<br>
+
+**Load**:
+
+- The final_data table is created with columns for date, contacts for each of the 7 days, total repeat calls, problem type, and city service area.
+
+- Data from the staging_market table is aggregated to calculate the total repeat calls for each entry.
+
+- The transformed and aggregated data is then inserted into the final_data table.
+
+
+<br>
+
 **Project Scope and Deliverables**:
 
 The project scope outlined by Mr. Portone, Project Manager, emphasizes these key deliverables:
