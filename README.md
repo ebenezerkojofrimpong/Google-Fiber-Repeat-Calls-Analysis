@@ -109,3 +109,25 @@ The primary goal of this project is to uncover actionable insights that can lead
 
 
 ## Introduction
+
+Google Fiber, renowned for its high-speed internet and TV services, places a premium on customer satisfaction. Understanding customer interactions and inquiries is paramount to enhancing their experience. The project delves into the frequency and nature of customers contacting support after their first inquiry. By analyzing these repeat calls, Google Fiber aims to identify patterns, trends, and potential areas of improvement in their customer service.
+
+The analysis focuses on three 2022 datasets 'market_1', 'market_2' and 'market_3'. This data, while anonymized and approved for analysis, offers valuable insights into customer behavior and service needs.
+
+With the primary goal of reducing call volumes by improving first-time issue resolution and overall customer satisfaction, the analysis aims to provide actionable insights to Google Fiber's leadership team. By creating a comprehensive dashboard, this project aims to present visualizations that highlight repeat caller volumes, issue types, and trends across different market cities. The ultimate aim is to empower decision-makers with data-driven recommendations to optimize operational efficiency and enhance customer experience.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
