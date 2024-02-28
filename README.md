@@ -18,6 +18,10 @@ The objective of this project is to delve into the frequency of customers phonin
 <br>
 
 ### Methodology: 
+This methodology outlines the ETL(Extract, Transform and Load)  pipeline of extracting data from multiple sources, transforming it to the desired format, and loading it into the final destination table for analysis. 
+It ensures that the data is prepared and structured appropriately for the subsequent analysis and dashboard creation.
+
+<br>
 
 **Extract**:
 
