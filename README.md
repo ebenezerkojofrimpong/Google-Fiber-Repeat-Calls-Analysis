@@ -17,7 +17,7 @@ The objective of this project is to delve into the frequency of customers phonin
 
 <br>
 
-**Methodology**: 
+### Methodology: 
 
 **Extract**:
 
@@ -58,7 +58,7 @@ The objective of this project is to delve into the frequency of customers phonin
 
 <br>
 
-**Project Scope and Deliverables**:
+### Project Scope and Deliverables:
 
 The project scope outlined by Mr. Portone, Project Manager, emphasizes these key deliverables:
 
@@ -70,13 +70,13 @@ The project scope outlined by Mr. Portone, Project Manager, emphasizes these key
 
 <br>
 
-**Goals and Success Metrics**:
+### Goals and Success Metrics:
 
 The primary goal of this project is to uncover actionable insights that can lead to a reduction in call volumes, ultimately improving customer satisfaction and operational efficiency. Success will be measured by the ability of the dashboard to provide stakeholders with clear insights into repeat caller volumes across different markets and the types of issues they encounter.
 
 <br>
 
-**Key Findings**:
+### Key Findings:
 
 - The analysis revealed distinct patterns in repeat customer support calls based on the initial contact dates.
 
@@ -90,7 +90,7 @@ The primary goal of this project is to uncover actionable insights that can lead
 
 <br>
 
-**Recommendations**:
+### Recommendations:
 
 - Develop a proactive customer outreach strategy, particularly for Market A where repeat caller volumes are consistently high.
 
