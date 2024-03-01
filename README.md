@@ -59,6 +59,14 @@ It ensures that the data is prepared and structured appropriately for the subseq
 
 - The transformed and aggregated data is then inserted into the target table, 'final_data'.
 
+<br>
+
+**Query Optimization**:
+
+- The tables 'market', 'staging_market' and 'final_data' are clustered by frequently used column 'date_created' to significantly speed up queries and optimize query performance.
+
+
+
 
 <br>
 
