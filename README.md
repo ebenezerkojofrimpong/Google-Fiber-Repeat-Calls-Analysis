@@ -303,9 +303,9 @@ The other call columns are then contacts_n_number of days since first call. For 
 
 **contacts_n_7** => Day 7 after first call
 
-**problem_type** => The company that produced the movie
+**problem_type** => type of problem
 
-**market** => The category or genre of the movie
+**market** => City service area
 
 
 
