@@ -326,18 +326,6 @@ This phase of the analysis process includes cleaning the data and making sure it
 
 <br>
 
-A summary of the cleaning and manipulation done to the data is presented below:
-
-1.	Removing 4,466 Null values from the Movie Table will reduce the number of Observations from 7997  to 3531 hence I maintained the null values.
-2.	Added quarter, month, day_of_week and time_period columns to the Movie Table.
-3.	Converted the month column by assigning (1 - January and 12 - December)
-4.	Converted the day_of_week column by assigning (1 - Sunday and 7 - Saturday).
-5.	Converted the duration column by assigning (Short - less than 90min, Standard - From 90min to 120min, and Long - Greater than 120min)
-6.	Created separate tables to answer director and character specific quesions and a separate table to answer general questions by combining columns using INNER JOIN.
-
-<br>
-
-
 
 The **ETL** Process:
 
