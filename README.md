@@ -565,7 +565,7 @@ GROUP BY
 
 
 
-**Q Optimization**:
+**Query Optimization**:
 
 
 
