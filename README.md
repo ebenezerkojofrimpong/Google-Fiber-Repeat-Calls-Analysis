@@ -561,8 +561,30 @@ GROUP BY
 [](sql_image)
 ![pic-4](https://github.com/ebenezerkojofrimpong/Google-Fiber-Repeat-Calls-Analysis/assets/154938134/8e17920b-709f-4021-9754-8016f62795d2)
 
-
 <br>
+
+
+
+**Q Optimization**:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
