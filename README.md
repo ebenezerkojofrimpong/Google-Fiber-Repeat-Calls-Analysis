@@ -123,7 +123,7 @@ With the primary goal of reducing call volumes by improving first-time issue res
 
 ---
 
-We will address this case using the following methodology:
+We will address this case study using the following methodology:
 
 `ASK` `PREPARE`  `PROCESS`  `ANALYSE`  `SHARE`  `ACT`
 
