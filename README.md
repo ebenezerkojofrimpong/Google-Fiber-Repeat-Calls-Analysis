@@ -205,13 +205,13 @@ Here are the key skills needed:
 
 
 ### Tableau Skills:
-`Dashboard Design`
-`Data Connection`
-`Data Analysis`
-`Data Visualization`
-`Calculated Fields`
-`Filtering and Sorting`
-`Data Storytelling`
+**`Dashboard Design`**
+**`Data Connection`**
+**`Data Analysis`**
+**`Data Visualization`**
+**`Calculated Fields`**
+**`Filtering and Sorting`**
+**`Data Storytelling`**
 
 <br>
 
