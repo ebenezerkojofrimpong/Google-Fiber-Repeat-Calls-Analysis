@@ -153,6 +153,7 @@ These questions will guide the future deliverables:
 ## Business Task
 The ultimate goal of this project is to reduce call volume by increasing customer satisfaction and improving operational optimization.
 
+<br>
 
 ## Skills / Concepts Applied
 
@@ -164,14 +165,14 @@ Here are the key skills needed:
 `Performance Optimization`
 `Data Extraction`
 `Data Transformation`
-`Performing Union operations`
+`Union operations`
 `Subqueries`
-`Table Creation and Management`
+`Table Creation `
+
 `Data Validation and Quality Checks`
 `Data Manipulation and Insertion`
 `SQL Functions`
 `Filtering and Sorting`
-<br>
 `Grouping and Aggregation`
 
 
@@ -187,14 +188,15 @@ Here are the key skills needed:
 
 <br>
 
-## Key Stakeholders:
-
+## Stakeholders:
 
 - Emma Santiago, Hiring Manager
 
 - Keith Portone, Project Manager
 
 - Minna Rah, Lead BI Analyst
+
+<br>
 
 ## Team members: 
 
