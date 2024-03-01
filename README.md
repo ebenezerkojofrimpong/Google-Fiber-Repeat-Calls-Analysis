@@ -136,7 +136,7 @@ With the primary goal of reducing call volumes by improving first-time issue res
 
 We will address this case study using the following methodology:
 
-`ASK` `PREPARE`  `PROCESS`  `ANALYSE`  `SHARE`  `ACT`
+## `ASK` `PREPARE`  `PROCESS`  `ANALYSE`  `SHARE`  `ACT`
 
 <br>
 
@@ -153,7 +153,7 @@ We will address this case study using the following methodology:
 
 
 
-## **ASK**
+## `ASK`
 This phase involves defining the issue to be solved, identifying stakeholders and what their expectations from the project are.
 
 <br>
@@ -247,7 +247,7 @@ Here are the key skills needed:
 
 
 
-## PREPARE
+## `PREPARE`
 Involves collecting data and information and ensuring it satisfies necessary parameters.
 
 <br>
