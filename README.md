@@ -153,7 +153,7 @@ We will address this case study using the following methodology:
 
 
 
-## `ASK`
+# `ASK`
 This phase involves defining the issue to be solved, identifying stakeholders and what their expectations from the project are.
 
 <br>
@@ -247,7 +247,7 @@ Here are the key skills needed:
 
 
 
-## `PREPARE`
+# `PREPARE`
 Involves collecting data and information and ensuring it satisfies necessary parameters.
 
 <br>
@@ -321,7 +321,7 @@ The other call columns are then contacts_n_number of days since first call. For 
 
 
 
-## `PROCESS`
+# `PROCESS`
 This phase of the analysis process includes cleaning the data and making sure it is fit for purpose. As well as making any modifications necessary.
 
 <br>
