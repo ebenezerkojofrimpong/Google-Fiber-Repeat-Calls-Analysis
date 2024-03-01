@@ -178,7 +178,7 @@ The ultimate goal of this project is to reduce call volume by increasing custome
 
 
 ## Tools
-The tools used in this project are **MySQL** and **Tableau**.
+The tools used in this project are **BigQuery** and **Tableau**.
 
 <br>
 
