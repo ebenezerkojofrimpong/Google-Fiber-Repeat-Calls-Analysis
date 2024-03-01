@@ -117,7 +117,24 @@ The analysis focuses on three 2022 datasets 'market_1', 'market_2' and 'market_3
 With the primary goal of reducing call volumes by improving first-time issue resolution and overall customer satisfaction, the analysis aims to provide actionable insights to Google Fiber's leadership team. By creating a comprehensive dashboard, this project aims to present visualizations that highlight repeat caller volumes, issue types, and trends across different market cities. The ultimate aim is to empower decision-makers with data-driven recommendations to optimize operational efficiency and enhance customer experience.
 
 
+[](image)
+![pic-1](https://github.com/ebenezerkojofrimpong/Google-Fiber-Repeat-Calls-Analysis/assets/154938134/69798b53-4a8f-4204-a35f-703952e49109)
 
+
+---
+
+We will address this case using the following methodology:
+
+`ASK` `PREPARE`  `PROCESS`  `ANALYSE`  `SHARE`  `ACT`
+
+<br>
+
+
+
+## **ASK**
+This phase involves defining the issue to be solved, identifying stakeholders and what their expectations from the project are.
+
+<br>
 
 
 
