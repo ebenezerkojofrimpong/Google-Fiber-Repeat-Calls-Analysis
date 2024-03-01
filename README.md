@@ -567,8 +567,182 @@ GROUP BY
 
 **Query Optimization**:
 
+- The tables 'market', 'staging_market' and 'final_data' are clustered by frequently used column 'date_created' to significantly speed up queries and optimize query performance.
+
+```sql
+
+-- DROP EXISTING TEMPORARY TABLE
+DROP TABLE IF EXISTS fibre.market;
+
+-- CREATE TEMPORARY TABLE FOR market CLUSTERED BY date_created
+CREATE TEMPORARY TABLE IF NOT EXISTS fibre.market AS
+SELECT
+  date_created,
+  contacts_n,
+  contacts_n_1,
+  contacts_n_2,
+  contacts_n_3,
+  contacts_n_4,
+  contacts_n_5,
+  contacts_n_6,
+  contacts_n_7,
+  new_type,
+  new_market
+FROM `business-intelligence-414900.fibre.market_1`
+UNION ALL
+SELECT
+  date_created,
+  contacts_n,
+  contacts_n_1,
+  contacts_n_2,
+  contacts_n_3,
+  contacts_n_4,
+  contacts_n_5,
+  contacts_n_6,
+  contacts_n_7,
+  new_type,
+  new_market
+FROM `business-intelligence-414900.fibre.market_2`
+UNION ALL
+SELECT
+  date_created,
+  contacts_n,
+  contacts_n_1,
+  contacts_n_2,
+  contacts_n_3,
+  contacts_n_4,
+  contacts_n_5,
+  contacts_n_6,
+  contacts_n_7,
+  new_type,
+  new_market
+FROM `business-intelligence-414900.fibre.market_3`
+CLUSTER BY date_created;  -- Clustering by date_created for efficient reads
+
+-- DROP EXISTING STAGING TABLE
+DROP TABLE IF EXISTS fibre.staging_market;
+
+-- CREATE STAGING TABLE CLUSTERED BY date_created
+CREATE TABLE IF NOT EXISTS fibre.staging_market (
+  date_created DATE NOT NULL,
+  day_0 INT64 NOT NULL,
+  day_1 INT64 NOT NULL,
+  day_2 INT64 NOT NULL,
+  day_3 INT64 NOT NULL,
+  day_4 INT64 NOT NULL,
+  day_5 INT64 NOT NULL,
+  day_6 INT64 NOT NULL,
+  day_7 INT64 NOT NULL,
+  problem_type STRING NOT NULL,
+  city_service_area STRING NOT NULL
+)
+CLUSTER BY date_created;  -- Clustering by date_created for efficient reads
+
+-- TRANSFORMATION
+-- CHANGING STRING DATATYPES TO INT64 AND ADDING THE COLUMN TOTAL REPEAT CALLS
+INSERT INTO fibre.staging_market (
+  date_created,
+  day_0,
+  day_1,
+  day_2,
+  day_3,
+  day_4,
+  day_5,
+  day_6,
+  day_7,
+  problem_type,
+  city_service_area
+)
+SELECT
+  date_created, 
+  IFNULL(SAFE_CAST(contacts_n AS INT64), 0), 
+  IFNULL(SAFE_CAST(contacts_n_1 AS INT64), 0), 
+  IFNULL(SAFE_CAST(contacts_n_2 AS INT64), 0), 
+  IFNULL(SAFE_CAST(contacts_n_3 AS INT64), 0),
+  IFNULL(SAFE_CAST(contacts_n_4 AS INT64), 0), 
+  IFNULL(SAFE_CAST(contacts_n_5 AS INT64), 0), 
+  IFNULL(SAFE_CAST(contacts_n_6 AS INT64), 0), 
+  IFNULL(SAFE_CAST(contacts_n_7 AS INT64), 0),
+  CASE
+      WHEN new_type = 'type_1' THEN 'account management'
+      WHEN new_type = 'type_2' THEN 'technician troubleshooting'
+      WHEN new_type = 'type_3' THEN 'scheduling'
+      WHEN new_type = 'type_4' THEN 'construction'
+      ELSE 'internet & wifi' 
+      END AS problem_type,
+  new_market
+FROM fibre.market;
+
+-- DROP EXISTING TARGET TABLE
+DROP TABLE IF EXISTS fibre.final_data;
+
+-- CREATE TARGET TABLE CLUSTERED BY date_created
+CREATE TABLE IF NOT EXISTS fibre.final_data (
+  date_created DATE NOT NULL,
+  day_0 INT64 NOT NULL,
+  day_1 INT64 NOT NULL,
+  day_2 INT64 NOT NULL,
+  day_3 INT64 NOT NULL,
+  day_4 INT64 NOT NULL,
+  day_5 INT64 NOT NULL,
+  day_6 INT64 NOT NULL,
+  day_7 INT64 NOT NULL,
+  total_repeat_calls INT64 NOT NULL,
+  problem_type STRING NOT NULL,
+  city_service_area STRING NOT NULL
+)
+CLUSTER BY date_created;  -- Clustering by date_created for efficient reads
+
+-- ADDING THE COLUMN TOTAL REPEAT CALLS
+INSERT INTO fibre.final_data(
+  date_created,
+  day_0,
+  day_1,
+  day_2,
+  day_3,
+  day_4,
+  day_5,
+  day_6,
+  day_7,
+  total_repeat_calls,
+  problem_type,
+  city_service_area
+)
+SELECT
+  date_created,
+  day_0,
+  day_1,
+  day_2,
+  day_3,
+  day_4,
+  day_5,
+  day_6,
+  day_7,
+  SUM(day_1) + 
+  SUM(day_2) +
+  SUM(day_3) +
+  SUM(day_4) + 
+  SUM(day_5) +
+  SUM(day_6) +
+  SUM(day_7) AS total_repeat_calls,
+  problem_type,
+  city_service_area
+FROM `business-intelligence-414900.fibre.staging_market`
+GROUP BY
+  date_created,
+  day_0,
+  day_1,
+  day_2,
+  day_3,
+  day_4,
+  day_5,
+  day_6,
+  day_7,
+  problem_type,
+  city_service_area;
 
 
+```
 
 
 
