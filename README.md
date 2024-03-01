@@ -188,19 +188,19 @@ For this project, a combination of SQL and Tableau skills were crucial for extra
 Here are the key skills needed:
 
 ### SQL Skills:
-`ETL Pipeline`
-`Performance Optimization`
-`Data Extraction`
-`Data Transformation`
-`Union operations`
-`Subqueries`
-`Table Creation `
+**`ETL Pipeline`**
+**`Performance Optimization`**
+**`Data Extraction`**
+**`Data Transformation`
+`Union operations`**
+**`Subqueries`**
+**`Table Creation`**
 
-`Data Validation and Quality Checks`
-`Data Manipulation and Insertion`
-`SQL Functions`
-`Filtering and Sorting`
-`Grouping and Aggregation`
+**`Data Validation and Quality Checks`**
+**`Data Manipulation and Insertion`**
+**`SQL Functions`**
+**`Filtering and Sorting`**
+**`Grouping and Aggregation`**
 
 
 
