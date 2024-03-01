@@ -383,6 +383,9 @@ FROM `business-intelligence-414900.fibre.market_3`;
 
 ```
 
+[](sql_image)
+![pic-2](https://github.com/ebenezerkojofrimpong/Google-Fiber-Repeat-Calls-Analysis/assets/154938134/16d48a23-0757-4adf-af85-05df5b119f28)
+
 
 
 <br>
@@ -457,6 +460,8 @@ FROM market;
 
 ```
 
+[](sql_image)
+![pic-3](https://github.com/ebenezerkojofrimpong/Google-Fiber-Repeat-Calls-Analysis/assets/154938134/837c91a2-814f-4c58-a871-dd7ec1a41d31)
 
 
 
@@ -546,12 +551,15 @@ GROUP BY
   day_4,
   day_5,
   day_6,
-  day_7,
+  day_7,    
   problem_type,
   city_service_area;
 
 
 ```
+
+[](sql_image)
+![pic-4](https://github.com/ebenezerkojofrimpong/Google-Fiber-Repeat-Calls-Analysis/assets/154938134/8e17920b-709f-4021-9754-8016f62795d2)
 
 
 <br>
