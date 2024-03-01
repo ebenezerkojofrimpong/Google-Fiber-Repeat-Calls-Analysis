@@ -108,6 +108,17 @@ The primary goal of this project is to uncover actionable insights that can lead
 ---
 
 
+
+
+
+
+
+
+
+
+
+
+
 ## Introduction
 
 Google Fiber, renowned for its high-speed internet and TV services, places a premium on customer satisfaction. Understanding customer interactions and inquiries is paramount to enhancing their experience. The project delves into the frequency and nature of customers contacting support after their first inquiry. By analyzing these repeat calls, Google Fiber aims to identify patterns, trends, and potential areas of improvement in their customer service.
@@ -128,6 +139,16 @@ We will address this case study using the following methodology:
 `ASK` `PREPARE`  `PROCESS`  `ANALYSE`  `SHARE`  `ACT`
 
 <br>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -154,6 +175,13 @@ These questions will guide the future deliverables:
 The ultimate goal of this project is to reduce call volume by increasing customer satisfaction and improving operational optimization.
 
 <br>
+
+
+## Tools
+The tools used in this project are **MySQL** and **Tableau**.
+
+<br>
+
 
 ## Skills / Concepts Applied
 
@@ -211,6 +239,31 @@ Here are the key skills needed:
 
 
 
+
+
+
+
+
+
+
+
+
+## PREPARE
+Involves collecting data and information and ensuring it satisfies necessary parameters.
+
+<br>
+
+### Data Location
+Kindly follow the link to download the three separate datasets 'market_1', 'market_2' and 'market_3'.
+> Download datasets [here](https://drive.google.com/drive/folders/197jb8jmwkpc7HU2ib16Jn56_RPLLShPf)
+
+<br>
+
+
+### Data Organization
+The dataset contains 6 separate tables with 75873 observations in all.
+
+<br>
 
 
 
