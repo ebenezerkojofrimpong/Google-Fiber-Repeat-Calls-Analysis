@@ -318,3 +318,255 @@ The other call columns are then contacts_n_number of days since first call. For 
 
 
 
+
+
+
+## `PROCESS`
+This phase of the analysis process includes cleaning the data and making sure it is fit for purpose. As well as making any modifications necessary.
+
+<br>
+
+A summary of the cleaning and manipulation done to the data is presented below:
+
+1.	Removing 4,466 Null values from the Movie Table will reduce the number of Observations from 7997  to 3531 hence I maintained the null values.
+2.	Added quarter, month, day_of_week and time_period columns to the Movie Table.
+3.	Converted the month column by assigning (1 - January and 12 - December)
+4.	Converted the day_of_week column by assigning (1 - Sunday and 7 - Saturday).
+5.	Converted the duration column by assigning (Short - less than 90min, Standard - From 90min to 120min, and Long - Greater than 120min)
+6.	Created separate tables to answer director and character specific quesions and a separate table to answer general questions by combining columns using INNER JOIN.
+
+<br>
+
+
+
+The **ETL** Process:
+
+**Extract**:
+
+- Data is extracted from three different source tables (market_1, market_2, market_3) containing information on date created, contacts, new types, and markets.
+
+- These source tables are consolidated into a temporary table named 'market'.
+
+```sql
+
+-- USING A TEMPORARY TABLE AS A FIRST STAGING TABLE
+CREATE TEMPORARY TABLE IF NOT EXISTS market AS
+SELECT
+  date_created,
+  contacts_n,
+  contacts_n_1,
+  contacts_n_2,
+  contacts_n_3,
+  contacts_n_4,
+  contacts_n_5,
+  contacts_n_6,
+  contacts_n_7,
+  new_type,
+  new_market
+FROM `business-intelligence-414900.fibre.market_1`
+UNION ALL
+SELECT
+  date_created,
+  contacts_n,
+  contacts_n_1,
+  contacts_n_2,
+  contacts_n_3,
+  contacts_n_4,
+  contacts_n_5,
+  contacts_n_6,
+  contacts_n_7,
+  new_type,
+  new_market
+FROM `business-intelligence-414900.fibre.market_2`
+UNION ALL
+SELECT
+  date_created,
+  contacts_n,
+  contacts_n_1,
+  contacts_n_2,
+  contacts_n_3,
+  contacts_n_4,
+  contacts_n_5,
+  contacts_n_6,
+  contacts_n_7,
+  new_type,
+  new_market
+FROM `business-intelligence-414900.fibre.market_3`;
+
+```
+
+
+
+<br>
+
+
+**Transform**:
+
+- A staging table named 'staging_market' is created with defined columns for date, contacts for each of the 7 days, problem type, and city service area.
+
+- String data types are converted to INT64 for numerical calculations.
+
+- Null values are handled by replacing them with 0 for numerical calculations
+
+- The problem_type column is categorized based on specific conditions (ie., type_1 to 'account management', type_2 to 'technician troubleshooting', type_3 to 'scheduling', type_4 to 'construction' and type_5 to 'internet & wifi' ).
+
+```sql
+
+-- CREATING A STAGING TABLE
+DROP TABLE IF EXISTS fibre.staging_market;
+CREATE TABLE IF NOT EXISTS fibre.staging_market ( -- STAGING TABLE
+  date_created DATE NOT NULL,
+  day_0 INT64 NOT NULL,
+  day_1 INT64 NOT NULL,
+  day_2 INT64 NOT NULL,
+  day_3 INT64 NOT NULL,
+  day_4 INT64 NOT NULL,
+  day_5 INT64 NOT NULL,
+  day_6 INT64 NOT NULL,
+  day_7 INT64 NOT NULL,
+  problem_type STRING NOT NULL,
+  city_service_area STRING NOT NULL
+
+); 
+
+
+
+-- TRANSFORMATION
+-- CHANGING STRING DATATYPES TO INT64 AND ADDING THE COLUMN TOTAL REPEAT CALLS
+INSERT INTO fibre.staging_market (
+  date_created,
+  day_0,
+  day_1,
+  day_2,
+  day_3,
+  day_4,
+  day_5,
+  day_6,
+  day_7,
+  problem_type,
+  city_service_area
+)
+
+SELECT
+  date_created, 
+  IFNULL(SAFE_CAST(contacts_n AS INT64), 0), 
+  IFNULL(SAFE_CAST(contacts_n_1 AS INT64), 0), 
+  IFNULL(SAFE_CAST(contacts_n_2 AS INT64), 0), 
+  IFNULL(SAFE_CAST(contacts_n_3 AS INT64), 0),
+  IFNULL(SAFE_CAST(contacts_n_4 AS INT64), 0), 
+  IFNULL(SAFE_CAST(contacts_n_5 AS INT64), 0), 
+  IFNULL(SAFE_CAST(contacts_n_6 AS INT64), 0), 
+  IFNULL(SAFE_CAST(contacts_n_7 AS INT64), 0),
+  CASE
+      WHEN new_type = 'type_1' THEN 'account management'
+      WHEN new_type = 'type_2' THEN 'technician troubleshooting'
+      WHEN new_type = 'type_3' THEN 'scheduling'
+      WHEN new_type = 'type_4' THEN 'construction'
+      ELSE 'internet & wifi' 
+      END AS problem_type,
+  new_market
+FROM market;
+
+```
+
+
+
+
+
+<br>
+
+**Additional Transformation and Loading**:
+
+- Data from the market table is transformed and inserted into the staging_market table.
+
+- The transformed data includes the date created, contacts for each of the 7 days, categorized problem types, and city service areas.
+
+<br>
+
+
+**Load**:
+
+- The 'target table' is created with columns for date, contacts for each of the 7 days, total repeat calls, problem type, and city service area.
+
+- Data from the 'staging_market' table is aggregated to calculate the total repeat calls for each entry.
+
+- The transformed and aggregated data is then inserted into the target table, 'final_data'.
+
+```sql
+
+-- CREATING A TARGET TABLE
+DROP TABLE IF EXISTS fibre.final_data;
+CREATE TABLE IF NOT EXISTS fibre.final_data ( -- TARGET TABLE
+  date_created DATE NOT NULL,
+  day_0 INT64 NOT NULL,
+  day_1 INT64 NOT NULL,
+  day_2 INT64 NOT NULL,
+  day_3 INT64 NOT NULL,
+  day_4 INT64 NOT NULL,
+  day_5 INT64 NOT NULL,
+  day_6 INT64 NOT NULL,
+  day_7 INT64 NOT NULL,
+  total_repeat_calls INT64 NOT NULL,
+  problem_type STRING NOT NULL,
+  city_service_area STRING NOT NULL
+
+);
+
+
+-- ADDING THE COLUMN TOTAL REPEAT CALLS
+INSERT INTO fibre.final_data(
+  date_created,
+  day_0,
+  day_1,
+  day_2,
+  day_3,
+  day_4,
+  day_5,
+  day_6,
+  day_7,
+  total_repeat_calls,
+  problem_type,
+  city_service_area
+)
+
+SELECT
+  date_created,
+  day_0,
+  day_1,
+  day_2,
+  day_3,
+  day_4,
+  day_5,
+  day_6,
+  day_7,
+  SUM(day_1) + 
+  SUM(day_2) +
+  SUM(day_3) +
+  SUM(day_4) + 
+  SUM(day_5) +
+  SUM(day_6) +
+  SUM(day_7) AS total_repeat_calls,
+  problem_type,
+  city_service_area
+FROM `business-intelligence-414900.fibre.staging_market`
+GROUP BY
+  date_created,
+  day_0,
+  day_1,
+  day_2,
+  day_3,
+  day_4,
+  day_5,
+  day_6,
+  day_7,
+  problem_type,
+  city_service_area;
+
+
+```
+
+
+<br>
+
+
+
