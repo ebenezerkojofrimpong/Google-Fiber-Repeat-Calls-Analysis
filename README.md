@@ -773,7 +773,7 @@ In this phase we analyze the data to find patterns, relationships, and trends.
 
 <br>
 
-- Day 1 has the highest volume of repeat calls in all 3 months - over 2,000 in March, 1,837 in February, and 1,900 in January. 
+- Day 1 has the highest volume of repeat calls in all 3 months - over 2,000 in March, 1,827 in February, and 1,636 in January. 
 This indicates a large number of customers are calling back the very next day, likely due to unresolved issues on the first call.
 
 - Beyond Day 1, repeat calls decline but are still significant - around 1,000 on Day 2, 750 on Day 3, and 500-600 on Days 4-7.
