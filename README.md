@@ -394,9 +394,8 @@ FROM `business-intelligence-414900.fibre.market_3`;
 [](sql_image)
 ![pic-2](https://github.com/ebenezerkojofrimpong/Google-Fiber-Repeat-Calls-Analysis/assets/154938134/16d48a23-0757-4adf-af85-05df5b119f28)
 
+---
 
-
-<br>
 
 
 **Transform**:
@@ -472,9 +471,9 @@ FROM market;
 ![pic-3](https://github.com/ebenezerkojofrimpong/Google-Fiber-Repeat-Calls-Analysis/assets/154938134/837c91a2-814f-4c58-a871-dd7ec1a41d31)
 
 
+---
 
 
-<br>
 
 **Additional Transformation and Loading**:
 
@@ -569,7 +568,8 @@ GROUP BY
 [](sql_image)
 ![pic-4](https://github.com/ebenezerkojofrimpong/Google-Fiber-Repeat-Calls-Analysis/assets/154938134/8e17920b-709f-4021-9754-8016f62795d2)
 
-<br>
+
+---
 
 
 
@@ -752,6 +752,7 @@ GROUP BY
 
 ```
 
+---
 
 
 # `ANALYZE`
