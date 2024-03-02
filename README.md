@@ -771,6 +771,8 @@ In this phase we analyze the data to find patterns, relationships, and trends.
 [](repeat_calls_by_month_image)
 ![Repeat Calls By Month](https://github.com/ebenezerkojofrimpong/Google-Fiber-Repeat-Calls-Analysis/assets/154938134/ca96a0dc-df2a-4986-b3e3-e9d10b978215)
 
+<br>
+
 - Day 1 has the highest volume of repeat calls in all 3 months - over 2,000 in January, 1,800 in February, and 1,900 in March. 
 This indicates a large number of customers are calling back the very next day, likely due to unresolved issues on the first call.
 
@@ -780,7 +782,7 @@ The high repeat rate in the early days directly after the first call indicates t
 - Comparing months, March had the most repeat calls overall. 
 
 
-
+---
 
 
 
