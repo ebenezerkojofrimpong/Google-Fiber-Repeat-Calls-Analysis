@@ -755,6 +755,9 @@ GROUP BY
 ---
 
 
+<br>
+
+
 # `ANALYZE`
 
 In this phase we analyze the data to find patterns, relationships, and trends.
