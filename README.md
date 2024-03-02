@@ -754,6 +754,18 @@ GROUP BY
 
 
 
+# `ANALYZE`
+
+In this phase we analyze the data to find patterns, relationships, and trends.
+
+<br>
+
+**Outlined below are the key takeaways derived from the analysis of the data:**
+
+1. How often does the customer service team receive repeat calls from customers?
+
+[](repeat_calls_by_month_image)
+![Repeat Calls By Month](https://github.com/ebenezerkojofrimpong/Google-Fiber-Repeat-Calls-Analysis/assets/154938134/ca96a0dc-df2a-4986-b3e3-e9d10b978215)
 
 
 
@@ -761,6 +773,62 @@ GROUP BY
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2. What problem types generate the most repeat calls?
+
+[](repeat_calls_by_problem_type_image)
+![Repeat Calls By Problem Type](https://github.com/ebenezerkojofrimpong/Google-Fiber-Repeat-Calls-Analysis/assets/154938134/bae09922-f8e4-4860-a023-3575154cbc93)
+
+
+
+
+
+
+
+
+
+
+
+
+3. Which market city’s customer service team receives the most repeat calls?
+
+[](repeat_calls_by_city_service_area_segmented_by_problem_type_image)
+![Repeat Calls_ City Service Area Segmented By Problem Type](https://github.com/ebenezerkojofrimpong/Google-Fiber-Repeat-Calls-Analysis/assets/154938134/ffdee86b-f280-4cf0-bd60-9b350d0beb11)
+
+
+
+
+
+
+
+
+
+
+
+
+[](dashboard_image)
+![Dashboard](https://github.com/ebenezerkojofrimpong/Google-Fiber-Repeat-Calls-Analysis/assets/154938134/64441105-45c5-49c3-9e2c-5620be073552)
 
 
 
