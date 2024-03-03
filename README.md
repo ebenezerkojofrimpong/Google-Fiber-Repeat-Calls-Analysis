@@ -758,6 +758,24 @@ GROUP BY
 <br>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # `ANALYZE`
 
 In this phase we analyze the data to find patterns, relationships, and trends.
@@ -824,6 +842,16 @@ This suggests that customers often encounter persistent or recurring technical d
 
 
 
+
+
+
+
+
+
+
+
+
+
 3. Which market city’s customer service team receives the most repeat calls?
 
 [](repeat_calls_by_city_service_area_segmented_by_problem_type_image)
@@ -860,12 +888,20 @@ The outcomes are effectively communicated with pertinent stakeholders. The execu
 
 Dashboards created with visualizations also present relevant information at a glance.
 
+<br>
+
+
 
 [](dashboard_image)
 ![Dashboard](https://github.com/ebenezerkojofrimpong/Google-Fiber-Repeat-Calls-Analysis/assets/154938134/64441105-45c5-49c3-9e2c-5620be073552)
 
+Interact with dashboard [here](https://public.tableau.com/views/GoogleFiberRepeatCalls_17090536867310/GoogleFiberRepeatCalls?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)
+
+
 
 ---
+
+
 
 <br>
 
