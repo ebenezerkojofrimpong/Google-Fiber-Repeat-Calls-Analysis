@@ -806,12 +806,15 @@ The high repeat rate in the early days directly after the first call indicates t
 [](repeat_calls_by_problem_type_image)
 ![Repeat Calls By Problem Type](https://github.com/ebenezerkojofrimpong/Google-Fiber-Repeat-Calls-Analysis/assets/154938134/bae09922-f8e4-4860-a023-3575154cbc93)
 
+- "Internet and Wifi" issues account for 50.7% of all repeat calls with a total of 10,253 making it the most common problem type.
+
+- "Technician troubleshooting" follows, accounting for 29.6% of all repeat calls with a total of 5,987.
 
 
 
+---
 
-
-
+<br>
 
 
 
