@@ -90,9 +90,9 @@ The primary goal of this project is to uncover actionable insights that can lead
 
 ### Key Findings:
 
-- The analysis revealed distinct patterns in repeat customer support calls based on the initial contact dates.
+- March stands out as the month with the highest overall repeat call volume.
 
-- Notably, Mondays consistently showed higher volumes of repeat calls, suggesting a potential correlation with weekend inquiries that require follow-up during the beginning of the week.
+- Day 1 consistently records the highest repeat call volume across all three months.
 
 - Furthermore, the last week of each month exhibited a noticeable spike in repeat calls, indicating a trend possibly tied to billing cycles or promotional activities.
 
