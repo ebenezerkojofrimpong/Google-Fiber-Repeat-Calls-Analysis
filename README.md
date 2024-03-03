@@ -807,14 +807,18 @@ The high repeat rate in the early days directly after the first call indicates t
 ![Repeat Calls By Problem Type](https://github.com/ebenezerkojofrimpong/Google-Fiber-Repeat-Calls-Analysis/assets/154938134/bae09922-f8e4-4860-a023-3575154cbc93)
 
 - "Internet and Wifi" issues account for 50.7% of all repeat calls with a total of 10,253 making it the most common problem type.
+This suggests that issues with connectivity and network performance are likely to prompt customers to reach out for further assistance, indicating a critical need for robust and reliable internet services.
 
 - "Technician troubleshooting" follows, accounting for 29.6% of all repeat calls with a total of 5,987.
-
-
+This suggests that customers often encounter persistent or recurring technical difficulties that require ongoing support and resolution.
 
 ---
 
+
 <br>
+
+
+
 
 
 
@@ -825,11 +829,15 @@ The high repeat rate in the early days directly after the first call indicates t
 [](repeat_calls_by_city_service_area_segmented_by_problem_type_image)
 ![Repeat Calls_ City Service Area Segmented By Problem Type](https://github.com/ebenezerkojofrimpong/Google-Fiber-Repeat-Calls-Analysis/assets/154938134/ffdee86b-f280-4cf0-bd60-9b350d0beb11)
 
+- Market_1 shows the highest rate of repeat calls, primarily due to frequent issues with internet connectivity and the need for technician troubleshooting.
+Customers often contact customer service for assistance with these challenges, indicating a demand for improved network stability and technical support in this market.
+
+- Market_2 follows closely behind Market_1 in repeat calls, with customers often contacting customer service for issues related to internet connectivity and account management. This suggests a recurring need for support in these areas within this market.
+
+---
 
 
-
-
-
+<br>
 
 
 
