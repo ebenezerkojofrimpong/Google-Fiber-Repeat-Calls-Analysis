@@ -844,12 +844,56 @@ Customers often contact customer service for assistance with these challenges, i
 
 
 
+
+
+
+
+
+
+
+
+
+
+# `SHARE`
+
+The outcomes are effectively communicated with pertinent stakeholders. The execution stage of this project was carried out utilizing Tableau for analysis for crafting insightful visual representations.
+
+Dashboards created with visualizations also present relevant information at a glance.
+
+
 [](dashboard_image)
 ![Dashboard](https://github.com/ebenezerkojofrimpong/Google-Fiber-Repeat-Calls-Analysis/assets/154938134/64441105-45c5-49c3-9e2c-5620be073552)
 
 
+---
+
+<br>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# `ACT`
+
+Upon completion of data processing, analysis, and insight dissemination, the conclusive phase involves formulating a well-aligned course of action for Google Fibre, congruent with its business goals and mission. 
+
+My recommendations are as follows:
 
 
 
