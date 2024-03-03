@@ -94,13 +94,15 @@ The primary goal of this project is to uncover actionable insights that can lead
 
 - Day 1 consistently records the highest repeat call volume across all three months.
 
-- Furthermore, the last week of each month exhibited a noticeable spike in repeat calls, indicating a trend possibly tied to billing cycles or promotional activities.
+- Internet and wifi, and technician troubleshooting issues account for 80.3% of all repeat calls. 
 
 - Market A consistently reported the highest number of repeat calls, especially concerning issues related to product delivery and order tracking.
 
 - Issues related to product malfunction and technical difficulties consistently generated a significant number of repeat calls across all market segments.
 
+
 <br>
+
 
 ### Recommendations:
 
