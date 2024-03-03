@@ -96,9 +96,8 @@ The primary goal of this project is to uncover actionable insights that can lead
 
 - Internet and wifi, and technician troubleshooting issues account for 80.3% of all repeat calls. 
 
-- Market A consistently reported the highest number of repeat calls, especially concerning issues related to product delivery and order tracking.
+- Market_1 has the highest repeat call rate due to internet and technician issues, indicating a need for improved network stability whiles Market_2 closely follows with concerns about internet and account management.
 
-- Issues related to product malfunction and technical difficulties consistently generated a significant number of repeat calls across all market segments.
 
 
 <br>
