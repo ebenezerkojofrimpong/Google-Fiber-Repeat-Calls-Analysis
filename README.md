@@ -105,13 +105,11 @@ The primary goal of this project is to uncover actionable insights that can lead
 
 ### Recommendations:
 
-- Develop a proactive customer outreach strategy, particularly for Market A where repeat caller volumes are consistently high.
+- Implement focused training for agents on first call resolution best practices - techniques for fully resolving issues, setting proper expectations on issue timing and following up proactively.
 
-- Utilize customer feedback from initial interactions to personalize outreach efforts, addressing specific concerns and providing tailored solutions.
+- Implement real-time monitoring systems to identify and resolve network issues to improve internet stability, speed, and reliability.
 
-- Provide specialized training for customer support agents, focusing on troubleshooting technical issues and product malfunctions.
-
-- For Market B with varied problem types, create specialized support teams or channels dedicated to specific categories of customer inquiries.
+- Invest in targeted network upgrades to improve reliability and equip customer service representatives with specialized training on technical troubleshooting and account management to resolve issues completely on first contact for both market 1 and market 2.
 
 
 ---
@@ -932,7 +930,8 @@ Upon completion of data processing, analysis, and insight dissemination, the con
 
 My recommendations are as follows:
 
+- Implement focused training for agents on first call resolution best practices - techniques for fully resolving issues, setting proper expectations on issue timing and following up proactively.
 
+- Implement real-time monitoring systems to identify and resolve network issues to improve internet stability, speed, and reliability.
 
-
-
+- Invest in targeted network upgrades to improve reliability and equip customer service representatives with specialized training on technical troubleshooting and account management to resolve issues completely on first contact for both market 1 and market 2.
