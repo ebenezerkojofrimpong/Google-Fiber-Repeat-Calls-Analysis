@@ -968,9 +968,18 @@ My recommendations are as follows:
 By implementing these next steps, the project aims to significantly improve customer satisfaction, reduce repeat calls, and enhance the overall efficiency of customer service operations. Continuous monitoring, feedback collection, and adaptation of strategies will be crucial for long-term success in achieving the project objectives.
 
 
+---
+
+
+<br>
 
 
 
 
 
+## References
+
+**Google Business Intelligence Professional Certification Program**
+
+**Alaye Lawson**: Revealing Repeat Call Patterns and Driving Customer Satisfaction [view](https://medium.com/@alayelawson/google-fiber-customer-service-dashboard-revealing-repeat-call-patterns-and-driving-customer-301ae9f7a350)
 
