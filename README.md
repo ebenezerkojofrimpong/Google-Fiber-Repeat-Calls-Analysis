@@ -109,7 +109,7 @@ The primary goal of this project is to uncover actionable insights that can lead
 
 - Implement real-time monitoring systems to identify and resolve network issues to improve internet stability, speed, and reliability.
 
-- Invest in targeted network upgrades to improve reliability and equip customer service representatives with specialized training on technical troubleshooting and account management to resolve issues completely on first contact for both market 1 and market 2.
+- Invest in targeted network upgrades to improve reliability and conduct specialized training on technical troubleshooting and account management for market 1 and market 2 customer service representatives respectively, to resolve issues completely on first contact.
 
 
 ---
